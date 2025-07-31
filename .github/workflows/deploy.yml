@@ -2,7 +2,7 @@ name: Deploy Flutter Web
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -12,16 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # ← Critical for Flutter
 
       - uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.22.0'  # ← Specify version
           channel: stable
 
       - run: flutter pub get
-      - run: flutter build web --release --base-href /YourNewPortfolio/ --dart-define=FLUTTER_WEB_CANVASKIT_URL=/canvaskit/
+      - run: flutter build web --release --base-href /flutter_portfolio/ --dart-define=FLUTTER_WEB_CANVASKIT_URL=/canvaskit/
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
-          force_orphan: true
+          force_orphan: true  # ← Must be true
+          enable_jekyll: false # ← Disable Jekyll
+          keep_files: false    # ← Clean deployment
+          cname: zuhayer-tajbid.github.io/flutter_portfolio/
