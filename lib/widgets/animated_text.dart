@@ -16,16 +16,23 @@ class AnimatedBorderText extends StatefulWidget {
 
 class _AnimatedBorderTextState extends State<AnimatedBorderText> {
   bool toggle = false;
-
+  Timer? _timer;
   @override
   void initState() {
     super.initState();
-    // Toggle the gradient every 2 seconds
-    Timer.periodic(Duration(seconds: 1), (timer) {
+
+    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      if (!mounted) return; // extra safety
       setState(() {
         toggle = !toggle;
       });
     });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel(); // <-- cancel the timer when widget is disposed
+    super.dispose();
   }
 
   @override

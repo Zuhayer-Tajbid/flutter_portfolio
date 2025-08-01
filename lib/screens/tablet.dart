@@ -193,51 +193,45 @@ class Tablet extends StatelessWidget {
 
                       Column(
                         children: [
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.teal,
-                                endYs: [
-                                  size.width * 0.019,
-                                  size.width * 0.060,
-                                  size.width * 0.1,
-                                  size.width * 0.14,
-                                ],
-                                startX: size.width * 0.00,
-                                endX: size.width * 0.258,
-                                startY: size.width * 0.08,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.teal,
+                              endYs: [
+                                size.width * 0.019,
+                                size.width * 0.060,
+                                size.width * 0.1,
+                                size.width * 0.14,
+                              ],
+                              startX: size.width * 0.00,
+                              endX: size.width * 0.258,
+                              startY: size.width * 0.08,
                             ),
                           ),
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.lightBlue,
-                                endYs: [size.width * 0.188],
-                                startX: size.width * 0.004,
-                                endX: size.width * 0.258,
-                                startY: size.width * 0.188,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.lightBlue,
+                              endYs: [size.width * 0.188],
+                              startX: size.width * 0.004,
+                              endX: size.width * 0.258,
+                              startY: size.width * 0.188,
                             ),
                           ),
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.cyan,
-                                endYs: [
-                                  size.width * 0.230,
-                                  size.width * 0.275,
-                                  size.width * 0.315,
-                                  size.width * 0.360,
-                                  size.width * 0.400,
-                                  size.width * 0.442,
-                                  size.width * 0.482,
-                                  size.width * 0.525,
-                                ],
-                                startX: size.width * 0,
-                                endX: size.width * 0.258,
-                                startY: size.width * 0.39,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.cyan,
+                              endYs: [
+                                size.width * 0.230,
+                                size.width * 0.275,
+                                size.width * 0.315,
+                                size.width * 0.360,
+                                size.width * 0.400,
+                                size.width * 0.442,
+                                size.width * 0.482,
+                                size.width * 0.525,
+                              ],
+                              startX: size.width * 0,
+                              endX: size.width * 0.258,
+                              startY: size.width * 0.39,
                             ),
                           ),
                         ],

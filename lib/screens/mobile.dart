@@ -187,51 +187,45 @@ class Mobile extends StatelessWidget {
 
                       Column(
                         children: [
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.teal,
-                                endYs: [
-                                  size.height * 0.070,
-                                  size.height * 0.115,
-                                  size.height * 0.165,
-                                  size.height * 0.210,
-                                ],
-                                startX: size.height * 0.00,
-                                endX: size.height * 0.115,
-                                startY: size.height * 0.15,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.teal,
+                              endYs: [
+                                size.height * 0.070,
+                                size.height * 0.115,
+                                size.height * 0.165,
+                                size.height * 0.210,
+                              ],
+                              startX: size.height * 0.00,
+                              endX: size.height * 0.115,
+                              startY: size.height * 0.15,
                             ),
                           ),
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.lightBlue,
-                                endYs: [size.height * 0.295],
-                                startX: size.height * 0,
-                                endX: size.height * 0.115,
-                                startY: size.height * 0.295,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.lightBlue,
+                              endYs: [size.height * 0.295],
+                              startX: size.height * 0,
+                              endX: size.height * 0.115,
+                              startY: size.height * 0.295,
                             ),
                           ),
-                          Positioned.fill(
-                            child: CustomPaint(
-                              painter: LeftToRightBranchPainter(
-                                color: Colors.cyan,
-                                endYs: [
-                                  size.height * 0.37,
-                                  size.height * 0.415,
-                                  size.height * 0.475,
-                                  size.height * 0.545,
-                                  size.height * 0.605,
-                                  size.height * 0.660,
-                                  size.height * 0.720,
-                                  size.height * 0.780,
-                                ],
-                                startX: size.height * 0,
-                                endX: size.height * 0.115,
-                                startY: size.height * 0.58,
-                              ),
+                          CustomPaint(
+                            painter: LeftToRightBranchPainter(
+                              color: Colors.cyan,
+                              endYs: [
+                                size.height * 0.37,
+                                size.height * 0.415,
+                                size.height * 0.475,
+                                size.height * 0.545,
+                                size.height * 0.605,
+                                size.height * 0.660,
+                                size.height * 0.720,
+                                size.height * 0.780,
+                              ],
+                              startX: size.height * 0,
+                              endX: size.height * 0.115,
+                              startY: size.height * 0.58,
                             ),
                           ),
                         ],
