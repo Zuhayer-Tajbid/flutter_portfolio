@@ -117,7 +117,7 @@ class Desktop extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: size.width * 0.01 + size.height / size.width,
+                    height: size.width * 0.05 + size.height / size.width,
                   ),
                   Text(
                     'About Me',
@@ -147,7 +147,7 @@ class Desktop extends StatelessWidget {
                     alignment: Alignment.bottomCenter,
                     child: ScrollHintArrow(size: size.width),
                   ),
-                  SizedBox(height: size.width * 0.017),
+                 // SizedBox(height: size.width * 0.017),
                 ],
               ),
             ),
@@ -379,7 +379,7 @@ class Desktop extends StatelessWidget {
                     'Open to collaboration or mentorship',
                     style: TextStyle(
                       fontFamily: 'font2',
-                      fontSize: size.width * 0.013,
+                      fontSize: size.width * 0.018,
                       color: Colors.white,
                     ),
                   ),

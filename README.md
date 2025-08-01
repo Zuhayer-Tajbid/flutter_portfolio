@@ -1,16 +1,40 @@
-# portfolio
+# 🌐 Flutter Portfolio Website
 
-A new Flutter project.
+This is a **responsive portfolio website** built using [Flutter Web](https://flutter.dev/web). It showcases my skills, courses, and projects in a clean and visually engaging format, with smooth animations and custom-designed elements.
 
-## Getting Started
+🔗 **Live Site:** [zuhayer-tajbid.github.io/flutter_portfolio](https://zuhayer-tajbid.github.io/flutter_portfolio)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 💡 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- ✅ **Fully Responsive**  
+  Optimized for desktop, tablet, and mobile devices.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 🎨 **Beautiful UI Design**  
+  Clean layout using Flutter’s `Row`, `Column`, `Stack`, and `CustomPaint` for precision.
+
+- 🖌️ **Custom Drawing Effects**  
+  Hand-drawn **branch-like connectors** between labels using the `CustomPainter` class.
+
+- ✨ **Subtle Animations**  
+  Smooth transitions, spacing, and alignment to enhance user experience.
+
+- 🚀 **Fast & Lightweight**  
+  Built with Flutter Web’s release mode for optimal performance.
+
+---
+
+## 🛠️ Built With
+
+- **Flutter 3.32.8** (Stable Channel)
+- **GitHub Actions** for automatic deployment
+- **CanvasKit** rendering for higher-fidelity graphics
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+flutter pub get
+flutter run -d chrome

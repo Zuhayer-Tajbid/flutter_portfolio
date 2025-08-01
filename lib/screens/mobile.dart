@@ -163,24 +163,24 @@ class Mobile extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: size.height * 0.02),
+                      SizedBox(width: size.height * 0.07),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           SizedBox(height: size.height * 0.125),
                           SkillLabel(
                             mainLabel: 'Languages',
-                            size: size.height * 0.7,
+                            size: size.height * 0.9,
                           ),
-                          SizedBox(height: size.height * 0.091),
+                          SizedBox(height: size.height * 0.105),
                           SkillLabel(
                             mainLabel: 'Frameworks',
-                            size: size.height * 0.7,
+                            size: size.height * 0.9,
                           ),
-                          SizedBox(height: size.height * 0.23),
+                          SizedBox(height: size.height * 0.244),
                           SkillLabel(
                             mainLabel: 'Courses',
-                            size: size.height * 0.7,
+                            size: size.height * 0.9,
                           ),
                         ],
                       ),
@@ -197,7 +197,7 @@ class Mobile extends StatelessWidget {
                                 size.height * 0.210,
                               ],
                               startX: size.height * 0.00,
-                              endX: size.height * 0.115,
+                              endX: size.height * 0.173,
                               startY: size.height * 0.15,
                             ),
                           ),
@@ -206,7 +206,7 @@ class Mobile extends StatelessWidget {
                               color: Colors.lightBlue,
                               endYs: [size.height * 0.295],
                               startX: size.height * 0,
-                              endX: size.height * 0.115,
+                              endX: size.height * 0.173,
                               startY: size.height * 0.295,
                             ),
                           ),
@@ -214,9 +214,9 @@ class Mobile extends StatelessWidget {
                             painter: LeftToRightBranchPainter(
                               color: Colors.cyan,
                               endYs: [
-                                size.height * 0.37,
-                                size.height * 0.415,
-                                size.height * 0.475,
+                                size.height * 0.377,
+                                size.height * 0.422,
+                                size.height * 0.478,
                                 size.height * 0.545,
                                 size.height * 0.605,
                                 size.height * 0.660,
@@ -224,7 +224,7 @@ class Mobile extends StatelessWidget {
                                 size.height * 0.780,
                               ],
                               startX: size.height * 0,
-                              endX: size.height * 0.115,
+                              endX: size.height * 0.173,
                               startY: size.height * 0.58,
                             ),
                           ),
@@ -359,7 +359,7 @@ class Mobile extends StatelessWidget {
                     'Open to collaboration or mentorship',
                     style: TextStyle(
                       fontFamily: 'font2',
-                      fontSize: size.height * 0.016,
+                      fontSize: size.height * 0.025,
                       color: Colors.white,
                     ),
                   ),

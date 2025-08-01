@@ -111,26 +111,26 @@ class Tablet extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: size.width * 0.05),
+                  SizedBox(height: size.width * 0.15),
                   Text(
                     'About Me',
                     style: TextStyle(
                       fontFamily: 'font2',
                       color: Colors.white,
-                      fontSize: size.width * 0.015,
+                      fontSize: size.width * 0.019,
                     ),
                   ),
                   SizedBox(height: size.width * 0.0012),
                   Padding(
                     padding: EdgeInsets.symmetric(
-                      horizontal: size.width * 0.035,
+                      horizontal: size.width * 0.039,
                     ),
                     child: Text(
                       'Hi! I\'m a Computer Science student at RUET, currently in my 2nd year. I\'m learning Flutter to build cross-platform mobile apps, and I try to explore and learn something new every day. I\'m passionate about growing as a developer and excited to see where this journey takes me!',
                       style: TextStyle(
                         color: Colors.white70,
                         fontFamily: 'font2',
-                        fontSize: size.width * 0.014,
+                        fontSize: size.width * 0.018,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -365,7 +365,7 @@ class Tablet extends StatelessWidget {
                     'Open to collaboration or mentorship',
                     style: TextStyle(
                       fontFamily: 'font2',
-                      fontSize: size.width * 0.013,
+                      fontSize: size.width * 0.017,
                       color: Colors.white,
                     ),
                   ),
