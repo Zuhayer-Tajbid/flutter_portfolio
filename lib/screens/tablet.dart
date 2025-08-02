@@ -111,7 +111,7 @@ class Tablet extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: size.width * 0.15),
+                  SizedBox(height: size.width * 0.09),
                   Text(
                     'About Me',
                     style: TextStyle(
