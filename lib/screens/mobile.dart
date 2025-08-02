@@ -163,24 +163,24 @@ class Mobile extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: size.height * 0.07),
+                      SizedBox(width: size.width * 0.055),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          SizedBox(height: size.height * 0.125),
+                          SizedBox(height: size.width * 0.25),
                           SkillLabel(
                             mainLabel: 'Languages',
-                            size: size.height * 0.9,
+                            size: size.width *1.58,
                           ),
-                          SizedBox(height: size.height * 0.105),
+                          SizedBox(height: size.width * 0.215),
                           SkillLabel(
                             mainLabel: 'Frameworks',
-                            size: size.height * 0.9,
+                            size: size.width*1.58 ,
                           ),
-                          SizedBox(height: size.height * 0.244),
+                          SizedBox(height: size.width * 0.46),
                           SkillLabel(
                             mainLabel: 'Courses',
-                            size: size.height * 0.9,
+                            size: size.width*1.58 ,
                           ),
                         ],
                       ),
@@ -191,46 +191,46 @@ class Mobile extends StatelessWidget {
                             painter: LeftToRightBranchPainter(
                               color: Colors.teal,
                               endYs: [
-                                size.height * 0.070,
-                                size.height * 0.115,
-                                size.height * 0.165,
-                                size.height * 0.210,
+                                size.width * 0.155,
+                                size.width * 0.25,
+                               size.width * 0.365,
+                                size.width * 0.470,
                               ],
-                              startX: size.height * 0.00,
-                              endX: size.height * 0.173,
-                              startY: size.height * 0.15,
+                              startX: size.width * 0.002,
+                              endX: size.width * 0.24,
+                              startY: size.width * 0.315,
                             ),
                           ),
                           CustomPaint(
                             painter: LeftToRightBranchPainter(
                               color: Colors.lightBlue,
-                              endYs: [size.height * 0.295],
-                              startX: size.height * 0,
-                              endX: size.height * 0.173,
-                              startY: size.height * 0.295,
+                              endYs: [size.width * 0.65],
+                              startX:size.width * 0.007,
+                              endX:size.width * 0.25,
+                              startY: size.width * 0.65,
                             ),
                           ),
                           CustomPaint(
                             painter: LeftToRightBranchPainter(
                               color: Colors.cyan,
                               endYs: [
-                                size.height * 0.377,
-                                size.height * 0.422,
-                                size.height * 0.478,
-                                size.height * 0.545,
-                                size.height * 0.605,
-                                size.height * 0.660,
-                                size.height * 0.720,
-                                size.height * 0.780,
+                                size.width * 0.8,
+                                size.width * 0.9,
+                                size.width*1.01 ,
+                                size.width * 1.15,
+                                size.width * 1.27,
+                                size.width * 1.4,
+                                size.width * 1.51,
+                                size.width * 1.640,
                               ],
-                              startX: size.height * 0,
-                              endX: size.height * 0.173,
-                              startY: size.height * 0.58,
+                              startX: size.width * 0.002,
+                              endX: size.width * 0.25,
+                              startY: size.width * 1.225,
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(width: size.width * 0.258),
+                      SizedBox(width: size.width * 0.26),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -238,7 +238,7 @@ class Mobile extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(top: size.width * 0.005),
                             child: SkillWidget(
-                              size: size.height * 1.15,
+                              size: size.width * 2.45,
                               skills: ['Dart', 'C++', 'Java', 'C'],
 
                               iconList: [
@@ -251,14 +251,14 @@ class Mobile extends StatelessWidget {
                           ),
                           SizedBox(height: size.height * 0.03),
                           SkillWidget(
-                            size: size.height * 1.15,
+                            size: size.width * 2.45,
                             skills: ['Flutter'],
 
                             iconList: [FontAwesomeIcons.flutter],
                           ),
                           SizedBox(height: size.width * 0.055),
                           SkillWidget(
-                            size: size.height * 1.15,
+                            size: size.width * 2.3,
                             skills: [
                               'Structured Programming',
                               'Data Structure',
@@ -362,6 +362,7 @@ class Mobile extends StatelessWidget {
                       fontSize: size.height * 0.025,
                       color: Colors.white,
                     ),
+                    textAlign: TextAlign.center,
                   ),
                   SizedBox(height: size.height * 0.08),
                 ],
